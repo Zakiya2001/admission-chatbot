@@ -1,0 +1,22 @@
+# Ignore Python virtual environments
+Adm/
+venv/
+env/
+
+# Ignore system folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Ignore Rasa cache
+.rasa/
+results/
+
+# VSCode settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db

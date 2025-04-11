@@ -1,0 +1,274 @@
+version: "3.1"
+
+stories:
+  - story: Greet the user
+    steps:
+      - intent: great
+      - action: utter_great
+
+  - story: Respond to thanks
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+
+  - story: Respond to morning greeting
+    steps:
+      - intent: mor
+      - action: utter_mor
+
+  - story: Respond to evening greeting
+    steps:
+      - intent: ev
+      - action: utter_ev
+
+  - story: Inquire about registration steps
+    steps:
+      - intent: inquire_rej_step
+      - action: utter_inquire_rej_step
+
+  - story: Inquire about admission test
+    steps:
+      - intent: inquire_admission_test
+      - action: utter_inquire_admission_test
+
+  - story: Inquire about degree
+    steps:
+      - intent: inquire_degre
+      - action: utter_inquire_degre
+
+  - story: Inquire about admission deadline
+    steps:
+      - intent: inquire_admission_deadline
+      - action: utter_inquire_admission_deadline
+
+  - story: Inquire about international students
+    steps:
+      - intent: inquire_international_students
+      - action: utter_inquire_international_students
+
+  - story: Inquire about special needs support
+    steps:
+      - intent: inquire_special_needs
+      - action: utter_inquire_special_needs
+
+  - story: Inquire about changing major
+    steps:
+      - intent: inquire_change_major
+      - action: utter_inquire_change_major
+
+  - story: Inquire about registration deadline
+    steps:
+      - intent: inquire_registration_deadline
+      - action: utter_inquire_registration_deadline
+
+  - story: Inquire about multiple sections
+    steps:
+      - intent: inquire_multiple_sections
+      - action: utter_inquire_multiple_sections
+
+  - story: Inquire about types of forms
+    steps:
+      - intent: inquire_type_forms
+      - action: utter_inquire_type_forms
+
+  - story: Inquire about fee refund
+    steps:
+      - intent: inquire_fee_refund
+      - action: utter_inquire_fee_refund
+
+  - story: Inquire about fee invoice
+    steps:
+      - intent: inquire_fee_invoice
+      - action: utter_inquire_fee_invoice
+
+  - story: Inquire about changing start date
+    steps:
+      - intent: inquire_change_start_date
+      - action: utter_inquire_change_start_date
+
+  - story: Inquire about translation of documents
+    steps:
+      - intent: inquire_translation_documents
+      - action: utter_inquire_translation_documents
+
+  - story: Inquire about electronic submission
+    steps:
+      - intent: inquire_electronic_submission
+      - action: utter_inquire_electronic_submission
+
+  - story: Inquire about scholarship programs
+    steps:
+      - intent: inquire_scholarship_programs
+      - action: utter_inquire_scholarship_programs
+
+  - story: Inquire about scholarship application during studies
+    steps:
+      - intent: inquire_scholarship_application_during_studies
+      - action: utter_inquire_scholarship_application_during_studies
+
+  - story: Inquire about course registration in different terms
+    steps:
+      - intent: inquire_course_registration_in_different_terms
+      - action: utter_inquire_course_registration_in_different_terms
+
+  - story: Inquire about public holidays
+    steps:
+      - intent: inquire_public_holidays
+      - action: utter_inquire_public_holidays
+
+  - story: Inquire about freezing studies
+    steps:
+      - intent: inquire_freezing_studies
+      - action: utter_inquire_freezing_studies
+
+  - story: Inquire about freezing effect on duration
+    steps:
+      - intent: inquire_freezing_effect_on_duration
+      - action: utter_inquire_freezing_effect_on_duration
+
+  - story: Inquire about dormitory booking before registration
+    steps:
+      - intent: inquire_dormitory_booking_before_registration
+      - action: utter_inquire_dormitory_booking_before_registration
+
+  - story: Inquire about independent dormitory
+    steps:
+      - intent: inquire_independent_dormitory
+      - action: utter_inquire_independent_dormitory
+
+  - story: Inquire about student activities
+    steps:
+      - intent: inquire_student_activities
+      - action: utter_inquire_student_activities
+
+  - story: Inquire about political activities
+    steps:
+      - intent: inquire_pol_activities
+      - action: utter_inquire_pol_activities
+
+  - story: Inquire about course material info
+    steps:
+      - intent: inquire_course_material_info
+      - action: utter_inquire_course_material_info
+
+  - story: Inquire about class schedule help
+    steps:
+      - intent: inquire_class_schedule_help
+      - action: utter_inquire_class_schedule_help
+
+  - story: Inquire about login issue
+    steps:
+      - intent: inquire_login_issue
+      - action: utter_inquire_login_issue
+
+  - story: Inquire about updating personal data
+    steps:
+      - intent: inquire_update_personal_data
+      - action: utter_inquire_update_personal_data
+
+  - story: Inquire about contacting admission
+    steps:
+      - intent: inquire_contact_admission
+      - action: utter_inquire_contact_admission
+
+  - story: Inquire about course modification fee
+    steps:
+      - intent: inquire_course_modification_fee
+      - action: utter_inquire_course_modification_fee
+
+  - story: Inquire about deferred registration
+    steps:
+      - intent: inquire_deferred_registration
+      - action: utter_inquire_deferred_registration
+
+  - story: Inquire about registration fee
+    steps:
+      - intent: inquire_registration_fee
+      - action: utter_inquire_registration_fee
+
+  - story: Inquire about late registration
+    steps:
+      - intent: inquire_late_registration
+      - action: utter_inquire_late_registration
+
+  - story: Inquire about absence policy
+    steps:
+      - intent: inquire_absence_policy
+      - action: utter_inquire_absence_policy
+
+  - story: Provide university website
+    steps:
+      - intent: university_website
+      - action: utter_university_website
+
+  - story: Provide registration requirements
+    steps:
+      - intent: registration_requirements
+      - action: utter_registration_requirements
+
+  - story: Ask about registration steps
+    steps:
+      - intent: ask_regi_steps
+      - action: utter_ask_regi_steps
+
+  - story: Ask about admission model
+    steps:
+      - intent: ask_model
+      - action: utter_ask_model
+
+  - story: Ask about student department
+    steps:
+      - intent: ask_student_de
+      - action: utter_ask_student_de
+
+  - story: Ask about registration department
+    steps:
+      - intent: ask_reg_de
+      - action: utter_ask_reg_de
+
+  - story: Ask for email
+    steps:
+      - intent: ask_email
+      - action: utter_ask_email
+
+  - story: Ask about college
+    steps:
+      - intent: ask_colle
+      - action: utter_ask_colle
+
+  - story: Ask for general info
+    steps:
+      - intent: ask_general_info
+      - action: utter_ask_general_info
+
+  - story: Ask for location
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+
+  - story: Ask for medical
+    steps:
+      - intent: inquire_med_test
+      - action: utter_inquire_med_test
+
+  - story: Handle admission fees inquiry
+    steps:
+      - intent: inquire_admission_fees
+      - action: action_check_admission_type
+      - slot_was_set:
+          - admission_type: null
+      - action: utter_admission_type
+      - intent: inquire_admission_fees
+      - action: action_get_admission_fees
+      
+  - story: Ask for payment
+    steps:
+      - intent: ask_payment
+      - action: utter_ask_payment
+          
+  - story: Ask for kash
+    steps:
+      - intent: ask_defer
+      - action: utter_ask_defer
+   
+      

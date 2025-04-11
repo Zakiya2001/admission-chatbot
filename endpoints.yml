@@ -1,0 +1,23 @@
+# This file contains the different endpoints your bot can use.
+
+# Server where the models are pulled from.
+# https://rasa.com/docs/rasa/model-storage#fetching-models-from-a-server
+
+# models:
+#   url: http://my-server.com/models/default_core@latest
+#   wait_time_between_pulls: 10   # [optional](default: 100)
+
+# Server which runs your custom actions.
+# https://rasa.com/docs/rasa/custom-actions
+
+action_endpoint:
+  url: "http://127.0.0.1:5055/webhook"  # تأكد من أن البورت يتطابق مع البورت الذي يعمل عليه Action Server
+
+# Tracker store which is used to store the conversations.
+# By default the conversations are stored in memory.
+# https://rasa.com/docs/rasa/tracker-stores
+
+tracker_store:
+  type: SQL
+  dialect: mysql
+  url: mysql+mysqlconnector://root:123@localhost/admission_db

@@ -1,0 +1,115 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+# Arabic scenarios for admission inquiries
+
+- story: سؤال عن التحية
+  steps:
+  - user: |
+      مرحباً
+    intent: التحية
+  - action: utter_التحية
+
+- story: سؤال عن متطلبات التسجيل
+  steps:
+  - user: |
+      ما هي متطلبات التسجيل؟
+    intent: متطلبات التسجيل
+  - action: utter_متطلبات_التسجيل
+
+- story: سؤال عن زمن التسجيل
+  steps:
+  - user: |
+      متى يبدأ التسجيل؟
+    intent: زمن التسجيل
+  - action: utter_زمن_التسجيل
+
+- story: سؤال عن الرسوم
+  steps:
+  - user: |
+      كم رسوم التسجيل؟
+    intent: الرسوم
+  - action: utter_الرسوم
+
+- story: سؤال عن البرامج الدراسية
+  steps:
+  - user: |
+      ما هي البرامج الدراسية المتاحة؟
+    intent: البرامج
+  - action: utter_البرامج
+
+- story: سؤال عن نتائج القبول
+  steps:
+  - user: |
+      متى تظهر نتائج القبول؟
+    intent: النتائج
+  - action: utter_النتائج
+
+- story: سؤال عن فريق الدعم
+  steps:
+  - user: |
+      كيف أتواصل مع فريق الدعم؟
+    intent: فريق الدعم
+  - action: utter_فريق الدعم
+
+- story: سؤال عن الطلاب الدوليين
+  steps:
+  - user: |
+      هل يوجد تقديم للطلاب الدوليين؟
+    intent: الطلاب الدوليين
+  - action: utter_الطلاب الدوليين
+
+- story: سؤال عن اختبارات القبول
+  steps:
+  - user: |
+      هل يوجد اختبارات قبول؟
+    intent: اختبارات القبول
+  - action: utter_اختبارات القبول
+
+- story: شكر ورد
+  steps:
+  - user: |
+      شكراً
+    intent: الشكر
+  - action: utter_الشكر
+
+- story: سؤال عن الوثائق المطلوبة
+  steps:
+  - user: |
+      ما هي الوثائق المطلوبة للتقديم؟
+    intent: الوثائق
+  - action: utter_الوثائق
+
+- story: سؤال عن القبول المشروط
+  steps:
+  - user: |
+      هل يوجد قبول مشروط؟
+    intent: القبول المشروط
+  - action: utter_القبول المشروط
+
+- story: سؤال عن المنح الدراسية
+  steps:
+  - user: |
+      هل توفر الجامعة منح دراسية؟
+    intent: المنح الدراسية
+  - action: utter_المنح الدراسية
+
+- story: سؤال عن الدفع الإلكتروني
+  steps:
+  - user: |
+      هل يمكنني الدفع إلكترونياً؟
+    intent: الدفع الإلكتروني
+  - action: utter_الدفع الإلكتروني
+
+- story: سؤال عن التخصصات
+  steps:
+  - user: |
+      ما هي التخصصات المتاحة؟
+    intent: التخصصات
+  - action: utter_التخصصات
+
+- story: سؤال عن موعد الدراسة
+  steps:
+  - user: |
+      متى يبدأ العام الدراسي؟
+    intent: موعد الدراسة
+  - action: utter_موعد الدراسة
