@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: admission-chatbot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash start.sh"
+    envVars:
+      - key: PORT
+        value: 5005
