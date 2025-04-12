@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# شغّل Rasa في الخلفية
-rasa run --enable-api --cors "*" --port 5005 &
+# Start Rasa in background
+rasa run --enable-api --cors "*" --debug --port 5005 &
 
-# شغّل Flask
-python app.py
+# Wait a bit to make sure Rasa starts properly
+sleep 5
+
+# Start Flask app (assuming it's app.py)
+python3 app.py
