@@ -1,5 +1,4 @@
-# Ignore Python virtual environments
-Adm/
+# Ignore Python virtual environments 
 venv/
 env/
 
