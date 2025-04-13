@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.8.10-slim
 
 WORKDIR /app
 
@@ -11,5 +11,4 @@ COPY . .
 EXPOSE 5005 5000
 
 # تشغيل Rasa و Flask معًا
-CMD rasa run --enable-api --cors "*" --debug &
-CMD python app/main.py
+CMD ["bash", "-c", "rasa run --enable-api --cors '*' --debug & python app/main.py"]
