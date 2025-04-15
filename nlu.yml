@@ -1,0 +1,17 @@
+
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - مرحباً
+    - السلام عليكم
+    - أهلاً
+- intent: inquire_admission_deadline
+  examples: |
+    - متى آخر موعد للتقديم؟
+    - متى ينتهي التقديم؟
+- intent: goodbye
+  examples: |
+    - شكراً
+    - مع السلامة
+    - إلى اللقاء

@@ -1,16 +1,11 @@
-FROM python:3.8.10-slim
+
+FROM rasa/rasa:3.1.0
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY . /app
 
-RUN pip install --upgrade pip && pip install -r requirements.txt
+USER root
+RUN chmod +x start.sh
 
-COPY . .
-
-EXPOSE 5005 5000
-
-# تشغيل Rasa و Flask معًا
-CMD ["bash", "-c", "rasa run --enable-api --cors '*' --debug & python app/main.py"]
-# تثبيت أدوات البناء الأساسية (مثل g++ و gcc)
-RUN apt-get update && apt-get install -y build-essential libssl-dev libffi-dev python3-dev && apt-get clean
+CMD ["./start.sh"]
